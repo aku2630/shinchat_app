@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 4rem;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 1rem var(--color-shadow-light);
+}
+
+.chatName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.typing {
+  font-size: 0.8rem;
+  color: var(--color-primary-400);
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.noChatSelected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  background-color: var(--color-background-light);
+}
+
+.noChatSelected h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.noChatSelected p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.messageInput {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 -2px 1rem var(--color-shadow-light);
+}
+
+.messageInput .textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  height: 2.6rem;
+  background-color: var(--color-background-light);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.messageInput .textarea:focus {
+  background-color: var(--color-background);
+}
+
+.messageInput .button {
+  background-color: var(--color-primary-400);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 2.7rem;
+  width: 2.7rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.messageInput .button:hover {
+  background-color: var(--color-primary-500);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-mid);
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.emojiBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-mid);
+  background-color: var(--color-background-light);
+  border: none;
+  border-radius: 50%;
+  outline: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.emojiBtn:hover {
+  background-color: var(--color-background);
+}
+
+.call {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}

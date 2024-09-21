@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  color: black;
+  background-color: var(--color-background-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 2px var(--color-shadow-light);
+  padding: 0.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: max-content;
+  min-width: 180px;
+}
+
+.menuItem {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--color-background-light);
+  color: var(--color-text);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background-color: var(--color-background);
+}

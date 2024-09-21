@@ -1,0 +1,24 @@
+.app {
+  min-height: 100vh;
+}
+
+.chatContainer {
+  width: "100%";
+  color: "#FFF";
+}
+
+.brand {
+  font-family: Righteous, cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-dark);
+}
+
+::-webkit-slider-thumb:hover {
+  background: var(--color-background-dark);
+}

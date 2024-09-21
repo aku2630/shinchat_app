@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-background-light);
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-background-light);
+  color: var(--color-text-mid);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.searchButton:hover {
+  background-color: var(--color-background);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-400);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.logo:hover {
+  color: var(--color-primary-500);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme {
+  color: var(--color-text-mid);
+}
+
+.theme:hover {
+  color: var(--color-primary-400);
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+  color: var(--color-text-mid);
+}
+
+.notification .notificationCount {
+  position: absolute;
+  top: -0.3rem;
+  left: -0.3rem;
+  background-color: var(--color-primary-500);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+}
+
+.notification svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--color-text-mid);
+}
+
+.notification:hover {
+  color: var(--color-primary-400);
+}
+
+.noNotification {
+  color: var(--color-text-mid);
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidepanelTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.sidepanelSearch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidepanelSearch input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-background-light);
+  outline: 0;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.sidepanelSearch input:focus {
+  outline: 0;
+  background-color: var(--color-background);
+}
+
+.sidepanelSearch button {
+  background-color: var(--color-background-light);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidepanelSearch button:hover {
+  background-color: var(--color-background);
+}
+
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}

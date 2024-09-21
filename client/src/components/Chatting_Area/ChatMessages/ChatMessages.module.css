@@ -1,0 +1,25 @@
+.scrollableFeed {
+  /* scroll to bottom always */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 1rem;
+  height: 100%;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.messageContent {
+  padding: 0.5rem 1rem;
+  max-width: 66%;
+  font-weight: 400;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}

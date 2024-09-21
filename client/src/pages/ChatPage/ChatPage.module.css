@@ -1,0 +1,18 @@
+.content {
+  height: calc(100dvh - 4.2rem);
+  display: flex;
+  width: 100%;
+  background-color: var(--color-background-light);
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: unset;
+  }
+
+  .ChatsContainer {
+    max-width: unset;
+    margin-left: 1rem;
+  }
+}

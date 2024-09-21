@@ -1,0 +1,20 @@
+.modal {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  position: relative;
+  padding-top: 1.5rem;
+  border: none;
+  outline: 0;
+}
+
+.modal:focus {
+  outline: 0;
+}
+
+.modal .close {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--color-text-mid)
+}
