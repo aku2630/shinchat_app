@@ -11,7 +11,7 @@ This real-time chat application utilizes the MERN stack with MongoDB for flexibl
 
 ### University - IIT (ISM) Dhanbad
 
-### Department - Computer Science and Engineering
+### Department - Applied Geology
 
 ## Tech Stack Used
 
