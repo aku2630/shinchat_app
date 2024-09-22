@@ -59,7 +59,7 @@ This real-time chat application utilizes the MERN stack with MongoDB for flexibl
 Clone the project from the repository
 
 ```bash
-  git clone git@github.com:aku2630/IBY_project_RealTimeChatApp.git
+  git clone git@github.com:aku2630/shinchat_app.git
 ```
 
 Install dependencies
