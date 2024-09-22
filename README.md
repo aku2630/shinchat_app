@@ -2,7 +2,7 @@
 
 This real-time chat application utilizes the MERN stack with MongoDB for flexible data storage. It offers one-to-one and group chatting, real-time typing status, and interaction with the AI chatbot(Shinchan). The tech stack includes ReactJS for the client, Express.js for the server, socket.io for real-time communication, and JWT for authentication.
 
-- Visit <https://shinchan-chat.netlify.app>
+- Visit <http://shinchat.netlify.app/>
 - System-design-doc <https://docs.google.com/document/d/1co_2fTJBtwdriWVUoYpdFRbENUQh81rJHvgBwFk43_g/edit?usp=sharing>
 
 ---
