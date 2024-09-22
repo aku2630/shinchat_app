@@ -7,7 +7,7 @@ This real-time chat application utilizes the MERN stack with MongoDB for flexibl
 
 ---
 
-### Name - Abhishek Upadhyay
+### Name - Abhishek Kumar Upadhyay
 
 ### University - IIT (ISM) Dhanbad
 
