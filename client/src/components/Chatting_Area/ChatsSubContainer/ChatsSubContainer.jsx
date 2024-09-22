@@ -74,8 +74,6 @@ const ChatsSubContainer = ({ fetchAgain, setFetchAgain }) => {
   const sendMessage = async (e) => {
     console.log("Send Message");
     socket.emit("stop typing", selectedChat._id);
-    // optimistic update
-    setNewMessage("");
     try {
       const config = {
         headers: {
@@ -91,6 +89,7 @@ const ChatsSubContainer = ({ fetchAgain, setFetchAgain }) => {
         },
         config
       );
+      setNewMessage("");
       setMessages((prev) => [...prev, data]);
       socket.emit("new message", data);
     } catch (err) {
@@ -103,7 +102,6 @@ const ChatsSubContainer = ({ fetchAgain, setFetchAgain }) => {
   const sendAIMessage = async (e) => {
     console.log("AI Send Message");
     socket.emit("stop typing", selectedChat._id);
-    setNewMessage("");
     try {
       const config = {
         headers: {
@@ -119,6 +117,7 @@ const ChatsSubContainer = ({ fetchAgain, setFetchAgain }) => {
         },
         config
       );
+      setNewMessage("");
       setMessages((prev) => [...prev, data]);
       socket.emit("new ai message", data);
     } catch (err) {
@@ -341,6 +340,7 @@ const ChatsSubContainer = ({ fetchAgain, setFetchAgain }) => {
                 );
                 setNewMessage(`::${stickersArray[randomIndex]}::`);
               }}
+              type="button"
             >
               <BsEmojiHeartEyes size={20} />
             </button>

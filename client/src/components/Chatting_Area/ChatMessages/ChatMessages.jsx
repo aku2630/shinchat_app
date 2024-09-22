@@ -24,7 +24,8 @@ const isSticker = (message) => {
 /** @param {string} message */
 const getSticker = (message) => {
   const stickerRegex = new RegExp("::(.*)::");
-  if (!stickers[message.match(stickerRegex)?.[1]]) return message;
+  const stickerName = message.match(stickerRegex)?.[1];
+  if (!stickerName || !stickers[stickerName]) return message;
   return message.match(stickerRegex)?.[1] ? (
     <img
       src={stickers[message.match(stickerRegex)?.[1]]}
